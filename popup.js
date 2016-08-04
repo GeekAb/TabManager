@@ -2,7 +2,7 @@
 (function () {
     'use strict';
 
-    // all tabs
+    // save all tabs
     document.getElementById('save-all').addEventListener('click', function () {
         chrome.tabs.query({
             currentWindow: true
@@ -18,8 +18,8 @@
         });
     });
 
-    // open background page
-    document.getElementById('open-background-page').addEventListener('click', function () {
+    // open background page to show all saved tabs
+    document.getElementById('open-saved').addEventListener('click', function () {
         chrome.runtime.sendMessage({
             action: 'openbackgroundpage'
         }, function (res) {
@@ -28,15 +28,5 @@
             }
         });
     });
-
-}());
-
-;
-(function () {
-    'use strict';
-
-    // save all tabs
-
-    // open background page to show all saved tabs
 
 }());
