@@ -23,6 +23,7 @@
         chrome.runtime.sendMessage({
             action: 'openbackgroundpage'
         }, function (res) {
+            console.log(res);
             if (res === 'ok') {
                 window.close();
             }
