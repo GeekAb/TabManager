@@ -31,5 +31,9 @@
         "contextMenus"
     ],
     
-    "icons" : {}
+    "icons": { 
+        "16": "assets/icon/icon-48.png",
+        "48": "assets/icon/icon-48.png",
+        "128": "assets/icon/icon-48.png"
+    }
 }
